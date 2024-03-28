@@ -11,6 +11,7 @@
 		E8F571852BB54C70001F8685 /* libxcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5717A2BB54C70001F8685 /* libxcode.framework */; };
 		E8F5718A2BB54C70001F8685 /* libxcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F571892BB54C70001F8685 /* libxcodeTests.swift */; };
 		E8F5718B2BB54C70001F8685 /* libxcode.h in Headers */ = {isa = PBXBuildFile; fileRef = E8F5717D2BB54C70001F8685 /* libxcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8F571952BB54F74001F8685 /* multiplyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F571942BB54F74001F8685 /* multiplyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		E8F5717E2BB54C70001F8685 /* libxcode.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = libxcode.docc; sourceTree = "<group>"; };
 		E8F571842BB54C70001F8685 /* libxcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libxcodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F571892BB54C70001F8685 /* libxcodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libxcodeTests.swift; sourceTree = "<group>"; };
+		E8F571942BB54F74001F8685 /* multiplyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multiplyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				E8F5717D2BB54C70001F8685 /* libxcode.h */,
 				E8F5717E2BB54C70001F8685 /* libxcode.docc */,
+				E8F571942BB54F74001F8685 /* multiplyLib.swift */,
 			);
 			path = libxcode;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8F5717F2BB54C70001F8685 /* libxcode.docc in Sources */,
+				E8F571952BB54F74001F8685 /* multiplyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +411,7 @@
 		E8F571922BB54C70001F8685 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4KMRTJ75B9;
@@ -423,6 +428,7 @@
 		E8F571932BB54C70001F8685 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4KMRTJ75B9;

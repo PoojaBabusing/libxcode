@@ -1,0 +1,11 @@
+framework module libxcode {
+  umbrella header "libxcode.h"
+  export *
+
+  module * { export * }
+}
+
+module libxcode.Swift {
+  header "libxcode-Swift.h"
+  requires objc
+}
