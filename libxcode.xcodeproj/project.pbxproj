@@ -29,7 +29,7 @@
 /* Begin PBXFileReference section */
 		349875A92BB9C54000B8B95F /* Multiply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiply.swift; sourceTree = "<group>"; };
 		349875AD2BB9C84F00B8B95F /* libxcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libxcode.swift; sourceTree = "<group>"; };
-		34B0A7C22BBA94DC0086D36E /* package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = package.swift; sourceTree = "<group>"; };
+		34B0A7C22BBA94DC0086D36E /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		E8F5717A2BB54C70001F8685 /* libxcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libxcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F5717D2BB54C70001F8685 /* libxcode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libxcode.h; sourceTree = "<group>"; };
 		E8F5717E2BB54C70001F8685 /* libxcode.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = libxcode.docc; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		E8F571702BB54C70001F8685 = {
 			isa = PBXGroup;
 			children = (
-				34B0A7C22BBA94DC0086D36E /* package.swift */,
+				34B0A7C22BBA94DC0086D36E /* Package.swift */,
 				E8F5717C2BB54C70001F8685 /* libxcode */,
 				E8F571882BB54C70001F8685 /* libxcodeTests */,
 				E8F5717B2BB54C70001F8685 /* Products */,
