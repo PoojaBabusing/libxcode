@@ -349,6 +349,7 @@
 		E8F5718F2BB54C70001F8685 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -380,6 +381,7 @@
 		E8F571902BB54C70001F8685 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
