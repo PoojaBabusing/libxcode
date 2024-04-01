@@ -23,11 +23,11 @@ rm -rf $iphoneosArchiveDirectory
 rm -rf $iphoneosSimulatorDirectory
 rm -rf outputDirectory
 
-# Archive
-xcodebuild archive -scheme $moduleName \
-     -archivePath $iphoneosArchiveDirectory \
-     -sdk iphoneos \
-     SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
+# # Archive
+# xcodebuild archive -scheme $moduleName \
+#      -archivePath $iphoneosArchiveDirectory \
+#      -sdk iphoneos \
+#      SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
       
 xcodebuild archive -scheme $moduleName \
      -archivePath $iphoneosSimulatorDirectory \
@@ -35,9 +35,9 @@ xcodebuild archive -scheme $moduleName \
      SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
      ## XCFramework
 xcodebuild -create-xcframework \
-    -framework "$iphoneosArchiveDirectory/Products/Library/Frameworks/$moduleName.framework" \
     -framework "$iphoneosSimulatorDirectory/Products/Library/Frameworks/$moduleName.framework" \
     -output $outputDirectory
+#     -framework "$iphoneosArchiveDirectory/Products/Library/Frameworks/$moduleName.framework" \
 
 ## Cleanup
 rm -rf $iphoneosArchiveDirectory

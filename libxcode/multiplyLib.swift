@@ -6,8 +6,9 @@
 //
 
 import Foundation
-public final class multiplyLib  {
-    public init (){}
+@objc(multiplyLib)
+public final class multiplyLib: NSObject  {
+    public override init (){}
     public static func greet() {
         print(">>>>>>>>>> Hello from MyFramework!")
     }

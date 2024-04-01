@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		349875AA2BB9C54000B8B95F /* Multiply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349875A92BB9C54000B8B95F /* Multiply.swift */; };
+		349875AE2BB9C84F00B8B95F /* libxcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349875AD2BB9C84F00B8B95F /* libxcode.swift */; };
 		E8F5717F2BB54C70001F8685 /* libxcode.docc in Sources */ = {isa = PBXBuildFile; fileRef = E8F5717E2BB54C70001F8685 /* libxcode.docc */; };
 		E8F571852BB54C70001F8685 /* libxcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5717A2BB54C70001F8685 /* libxcode.framework */; };
 		E8F5718A2BB54C70001F8685 /* libxcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F571892BB54C70001F8685 /* libxcodeTests.swift */; };
@@ -25,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		349875A92BB9C54000B8B95F /* Multiply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiply.swift; sourceTree = "<group>"; };
+		349875AD2BB9C84F00B8B95F /* libxcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libxcode.swift; sourceTree = "<group>"; };
+		34B0A7C22BBA94DC0086D36E /* package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = package.swift; sourceTree = "<group>"; };
 		E8F5717A2BB54C70001F8685 /* libxcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libxcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F5717D2BB54C70001F8685 /* libxcode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libxcode.h; sourceTree = "<group>"; };
 		E8F5717E2BB54C70001F8685 /* libxcode.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = libxcode.docc; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 		E8F571702BB54C70001F8685 = {
 			isa = PBXGroup;
 			children = (
+				34B0A7C22BBA94DC0086D36E /* package.swift */,
 				E8F5717C2BB54C70001F8685 /* libxcode */,
 				E8F571882BB54C70001F8685 /* libxcodeTests */,
 				E8F5717B2BB54C70001F8685 /* Products */,
@@ -76,6 +82,8 @@
 				E8F5717D2BB54C70001F8685 /* libxcode.h */,
 				E8F5717E2BB54C70001F8685 /* libxcode.docc */,
 				E8F571942BB54F74001F8685 /* multiplyLib.swift */,
+				349875A92BB9C54000B8B95F /* Multiply.swift */,
+				349875AD2BB9C84F00B8B95F /* libxcode.swift */,
 			);
 			path = libxcode;
 			sourceTree = "<group>";
@@ -197,8 +205,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349875AA2BB9C54000B8B95F /* Multiply.swift in Sources */,
 				E8F5717F2BB54C70001F8685 /* libxcode.docc in Sources */,
 				E8F571952BB54F74001F8685 /* multiplyLib.swift in Sources */,
+				349875AE2BB9C84F00B8B95F /* libxcode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,10 +359,14 @@
 		E8F5718F2BB54C70001F8685 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCHS[sdk=*]" = (
+					"$(ARCHS_STANDARD)",
+					x86_64,
+				);
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4KMRTJ75B9;
+				DEVELOPMENT_TEAM = ZGDSA9QYC7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -380,10 +394,14 @@
 		E8F571902BB54C70001F8685 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCHS[sdk=*]" = (
+					"$(ARCHS_STANDARD)",
+					x86_64,
+				);
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4KMRTJ75B9;
+				DEVELOPMENT_TEAM = ZGDSA9QYC7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
