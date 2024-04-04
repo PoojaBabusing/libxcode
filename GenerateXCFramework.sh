@@ -21,23 +21,26 @@ outputDirectory="$( pwd; )/$moduleName.xcframework"
 ## Cleanup
 rm -rf $iphoneosArchiveDirectory
 rm -rf $iphoneosSimulatorDirectory
-rm -rf outputDirectory
+rm -rf $outputDirectory
 
 # # Archive
 # xcodebuild archive -scheme $moduleName \
 #      -archivePath $iphoneosArchiveDirectory \
 #      -sdk iphoneos \
 #      SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
-      
+
+## iOS Simulator Archive      
 xcodebuild archive -scheme $moduleName \
-     -archivePath $iphoneosSimulatorDirectory \
-     -sdk iphonesimulator \
-     SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
-     ## XCFramework
+    -configuration Release \
+    -archivePath $iphoneosSimulatorDirectory \
+    -destination "generic/platform=iOS Simulator" \
+    SKIP_INSTALL=NO \
+    BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+
+## XCFramework
 xcodebuild -create-xcframework \
     -framework "$iphoneosSimulatorDirectory/Products/Library/Frameworks/$moduleName.framework" \
     -output $outputDirectory
-#     -framework "$iphoneosArchiveDirectory/Products/Library/Frameworks/$moduleName.framework" \
 
 ## Cleanup
 rm -rf $iphoneosArchiveDirectory

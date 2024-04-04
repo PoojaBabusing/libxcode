@@ -1,0 +1,15 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios12.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name libxcode
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+@_exported import libxcode
+@_inheritsConvenienceInitializers @objc final public class Math : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc final public func greet()
+  @objc final public func multiply(a: Swift.Float, b: Swift.Float) -> Swift.Float
+  @objc deinit
+}

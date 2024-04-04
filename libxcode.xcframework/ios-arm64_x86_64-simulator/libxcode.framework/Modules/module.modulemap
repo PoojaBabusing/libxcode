@@ -1,7 +1,7 @@
 framework module libxcode {
   umbrella header "libxcode.h"
-  export *
 
+  export *
   module * { export * }
 }
 
